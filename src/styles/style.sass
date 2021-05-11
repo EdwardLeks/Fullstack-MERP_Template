@@ -1,0 +1,64 @@
+@import 'libs'
+@import 'fonts'
+@import 'vars'
+
+*  
+	margin: 0
+	padding: 0
+	border: 0
+
+body
+	background-color: $main
+	font-family: $font
+
+section
+	width: 100%
+	min-height: 450px
+	background-color: $main
+
+h1, h2, h3, h4, h5, h6
+	color: $text
+	margin-top: 10px
+	margin-bottom: 10px
+
+p
+	color: $text
+	font-size: 20px
+
+a
+	color: $text
+	font-size: 20px
+	transition: $mt
+	&:hover
+		color: $accent
+
+.button
+	padding: 10px 20px
+	background-color: $accent
+	border-radius: $radius
+	color: $main
+	transition: $mt
+	&:hover
+		box-shadow: $shadow
+
+.header
+	width: 100%
+	min-height: 150px
+	background-color: $accent
+	svg
+		width: 100px
+		height: 100px
+		path 
+			fill: $main
+			
+.footer
+	width: 100%
+	min-height: 150px
+	background-color: $text
+	h2
+		color: $main
+
+@import 'index'
+
+// Always at the end
+@import 'media'

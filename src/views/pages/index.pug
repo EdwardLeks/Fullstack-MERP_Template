@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block content
+	section.main
+		.container
+			.row
+				.col-12
+					h1 Hello !
+					+item('Hello item', 'Item 1')
+					a(href="#") Link
+				.col-md-6.col-12.main__block
+					.main__picture
+				.col-md-6.col-12.main__block
+					.main__picture.main__picture--active
+				.col-12.main__block
+					button.main__button Button

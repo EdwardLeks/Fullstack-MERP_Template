@@ -1,0 +1,16 @@
+include ../utils/mixins
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href="../../index.css")
+		title #{title}
+	body
+		include ../modules/header
+		block content
+		+item('Hello!', 'Hello react!')
+		include ../modules/footer
+		script(src="index.js")

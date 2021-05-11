@@ -1,0 +1,17 @@
+.main
+	&__block
+		margin-top: 50px
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+	&__picture
+		width: 100%
+		height: 427px
+		background-image: url('../img/background.jpg')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		&--active
+			box-shadow: $shadow
+	&__button
+		@extend .button
